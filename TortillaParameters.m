@@ -3,8 +3,8 @@ figure
 cam=webcam(1);
 IMA=imread('cal.jpg');
 
-constrealidad=0.167889908;
-%% Animacion
+constRealidad=0.167889908;
+%%Animacion
  %Ventana para mostrar los elementos de la animacion.
     Grad=zeros(640,480);
     Bandera_Exe=0;
@@ -17,7 +17,7 @@ constrealidad=0.167889908;
     Produccion_Buenos=0;
     Produccion_Malos=0;
 
- R=IMA(:,:,1);   G=IMA(:,:,2);   B=IMA(:,:,3);
+R=IMA(:,:,1);   G=IMA(:,:,2);   B=IMA(:,:,3);
 [filas,columnas,capas]=size(IMA);
 HSV=rgb2hsv(IMA);
 
@@ -110,7 +110,7 @@ end
     ax.FontSize = 15;
     %Firma de la imagen
     subplot(4,4,[9,10,11,12,13,14,15,16]);
-    plot(constrealidad*Radio_Pix); grid on
+    plot(constRealidad*Radio_Pix); grid on
     title('Firma del testal')
     ylabel('Magnitud del radio')
     xlabel('Radios del testal')
@@ -118,9 +118,5 @@ end
     ax.FontSize = 15;
     drawnow limitrate
   
-
-%Constante= 0.167889908
-
-
 
 
