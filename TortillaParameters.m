@@ -1,4 +1,3 @@
-
 figure
 cam=webcam(1);
 IMA=imread('cal.jpg');
@@ -16,7 +15,6 @@ constRealidad=0.167889908;
     Bandera_Exe=0;
     Produccion_Buenos=0;
     Produccion_Malos=0;
-
 R=IMA(:,:,1);   G=IMA(:,:,2);   B=IMA(:,:,3);
 [filas,columnas,capas]=size(IMA);
 HSV=rgb2hsv(IMA);
@@ -117,6 +115,3 @@ end
     ax = gca;
     ax.FontSize = 15;
     drawnow limitrate
-  
-
-
