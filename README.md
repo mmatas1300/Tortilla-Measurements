@@ -25,4 +25,4 @@ Consiste en la detección de puntos de interés en la imagen en los que se produ
 [1] G. Pajares y A. de la Escalera, <i>Conceptos y Métodos en Visión por Computador</i>, 2da
 ed. Grupo de Visión del Comité Español de Automática (CEA), 2016.
 
-[2] A. Jiménez, “Definición de centroides en patrones de Hartmann mediante procesamiento digital de imágenes”,& nbsp <i>Revista Colombiana de Tecnologías de Avanzada</i>, vol. 1, pp. 121-128, 2012.
+[2] A. Jiménez, “Definición de centroides en patrones de Hartmann mediante procesamiento digital de imágenes”, <i>Revista Colombiana de Tecnologías de Avanzada</i>, vol. 1, pp. 121-128, 2012.
