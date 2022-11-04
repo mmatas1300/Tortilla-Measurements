@@ -4,41 +4,9 @@
     <img src="imgs/RadiosTestal.png" height="400"/>
 </p>
 
-<math>
-    <mrow>
-        <mrow>
-            <mi>f</mi>
-            <mo>(</mo>
-            <mi>x</mi>
-            <mo>)</mo>
-        </mrow>
-        <mo>=</mo>
-        <mrow>
-            <mmultiscripts>
-                <mo>&Integral;</mo>
-                <mi>a</mi>
-                <mi>b</mi>
-            </mmultiscripts>
-            <mrow>
-                <mi>K</mi>
-                <mo>(</mo>
-                <mi>x</mi>
-                <mo>,</mo>
-                <mi>t</mi>
-                <mo>)</mo>
-            </mrow>
-            <mrow>
-                <mi>&phi;</mi>
-                <mo>(</mo>
-                <mi>t</mi>
-                <mo>)</mo>
-            </mrow>
-            <mi>d</mi>
-            <mi>t</mi>
-        </mrow>
-    </mrow>
-</math>
-
+ <h2>Bordes de la imagen</h2>
+    
+Para resaltar aquellos píxeles considerados frontera o que estén cerca de ella, se utiliza el gradiente ya que permite determinar si un píxel es o no de borde. El gradiente de una imagen $f(x,y)$ en un punto de coordenadas $(x,y)$ se define como un vector bidimensional, siendo perpendicular al borde [1].
 
 <h2>Firma de la imagen</h2> 
 <p>
