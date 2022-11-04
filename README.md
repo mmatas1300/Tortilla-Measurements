@@ -4,13 +4,14 @@
     <img src="imgs/RadiosTestal.png" height="400"/>
 </p>
 
+
+
+Los métodos de segmentación de regiones  permiten trabajar solamente con la información de la imagen esencial para el procesamiento, un método que permite trabajar a la imagen con información en el intervalo discreto $[0,1]$ es la binarización. Éste método de segmentación presenta una imagen que solamente contiene la información de las regiones que presentan una distribución de intensidad similar. La binarización por umbral permite extraer la mayor información posible en el intervalo mencionado, ya que desde el punto de vista del tratamiento de imágenes, un umbral se identifica cono un valor de intensidad a partir del cual un grupo determinado de píxeles serán considerados como pertenecientes a un subconjunto determinado y catalogados como blancos (1), mientras que el resto se asignan a un segundo subconjunto, siendo en este caso etiquetados como negros (0) [1, p. 100].
+
+
  <h2>Bordes de la imagen</h2>
     
-Para resaltar aquellos píxeles considerados frontera o que estén cerca de ella, se utiliza el gradiente ya que permite determinar si un píxel es o no de borde. El gradiente de una imagen $f(x,y)$ en un punto de coordenadas $(x,y)$ se define como un vector bidimensional, siendo perpendicular al borde [1].
-
-$(G[f(x,y)]=\left[\begin{matrix}G_x\\G_y \end{matrix}\right]=\left[\begin{matrix}\dfrac{\partial}{\partial x}f(x,y),\dfrac{\partial}{\partial y}f(x,y) \end{matrix}\right]=\left[\begin{matrix} \dfrac{f(x+\Delta x)-f(x-\Delta x)}{2 \Delta x}\\ \\ \dfrac{f(y+\Delta y)-f(y-\Delta y)}{2 \Delta y} \end{matrix}\right])$
-        
-La ecuación permite identificar un cambio abrupto de intensidad de un píxel a otro píxel vecino y debido a que los bordes presentan esta propiedad, es de especial utilidad para detectar la frontera de la región de la imagen de interés.
+Para resaltar aquellos píxeles considerados frontera o que estén cerca de ella, se utiliza el gradiente ya que permite determinar si un píxel es o no de borde. El gradiente de una imagen $f(x,y)$ en un punto de coordenadas $(x,y)$ se define como un vector bidimensional, siendo perpendicular al borde [1, p. 105].
 
 <h2>Firma de la imagen</h2> 
 <p>
