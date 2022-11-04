@@ -5,9 +5,13 @@
 </p>
 
 
+<p>
+Los métodos de segmentación de regiones  permiten trabajar solamente con la información de la imagen esencial para el procesamiento, un método que permite trabajar a la imagen con información en el intervalo discreto $[0,1]$ es la binarización. Éste método de segmentación presenta una imagen que solamente contiene la información de las regiones que presentan una distribución de intensidad similar. 
+</p>
 
-Los métodos de segmentación de regiones  permiten trabajar solamente con la información de la imagen esencial para el procesamiento, un método que permite trabajar a la imagen con información en el intervalo discreto $[0,1]$ es la binarización. Éste método de segmentación presenta una imagen que solamente contiene la información de las regiones que presentan una distribución de intensidad similar. La binarización por umbral permite extraer la mayor información posible en el intervalo mencionado, ya que desde el punto de vista del tratamiento de imágenes, un umbral se identifica cono un valor de intensidad a partir del cual un grupo determinado de píxeles serán considerados como pertenecientes a un subconjunto determinado y catalogados como blancos (1), mientras que el resto se asignan a un segundo subconjunto, siendo en este caso etiquetados como negros (0) [1, p. 100].
-
+<p>
+La binarización por umbral permite extraer la mayor información posible en el intervalo mencionado, ya que desde el punto de vista del tratamiento de imágenes, un umbral se identifica cono un valor de intensidad a partir del cual un grupo determinado de píxeles serán considerados como pertenecientes a un subconjunto determinado y catalogados como blancos (1), mientras que el resto se asignan a un segundo subconjunto, siendo en este caso etiquetados como negros (0) [1, p. 100]. El método convencional del algoritmo  se basa en el cálculo del centro de masa  y es conocido como el algoritmo de peso promediado de píxeles (PPPU) [2, p. 124].
+</p>
 
  <h2>Bordes de la imagen</h2>
     
@@ -17,3 +21,6 @@ Para resaltar aquellos píxeles considerados frontera o que estén cerca de ella
 <p>
 Consiste en la detección de puntos de interés en la imagen en los que se producen diferencias de gradiente significativas y luego construir un histograma con la información de la distancia de los puntos de interés a otro en específico, el centroide; esto permite generar un conjunto de datos único para cada tipo de imagen y a partir de intervalos establecidos, conocer si la imagen de la que se trata tiene alguna morfología en particular o no.
 </p>
+
+
+[2] A. Jiménez, “Definición de centroides en patrones de Hartmann mediante procesamiento digital de imágenes”, Revista Colombiana de Tecnologías de Avanzada, vol. 1, pp. 121-128, 2012.
