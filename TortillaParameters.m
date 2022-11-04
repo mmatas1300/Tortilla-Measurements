@@ -3,7 +3,7 @@ clear all
 close all
 figure
 %Lectura de imagen
-IMA=imread('testal.jpg');
+IMA=imread('./imgs/testal.jpg');
 
 %Inicialización de constantes.
 Grad=zeros(640,480);
